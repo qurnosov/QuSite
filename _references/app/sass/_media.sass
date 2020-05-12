@@ -1,0 +1,120 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+  #nav-top
+
+    #nt-collapse
+      
+      .nav-item
+        border: 0
+        padding: 0
+    
+    .dropdown-menu
+      min-width: auto
+      border-radius: 0
+      top: 0
+      padding-top: 0
+      padding-bottom: 0
+      border: 0
+
+      .dropdown-item
+        padding: 5px 0
+
+    #search
+
+      .form-control
+        width: 100%
+
+  
+  footer
+
+    #back-top
+      display: block
+      position: relative
+      text-align: center
+      width: 100%
+      cursor: pointer
+
+      .icon
+        display: block
+        width: 100%
+        text-align: center
+
+      .rotate
+        font-size: 10px
+        width: 100%
+        text-align: center
+
+    .hidden
+      display: none
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+  #nav-top
+    
+    .dropdown-menu
+      min-width: 25rem
+      border-radius: 0
+      top: 49px
+      padding-top: 20px
+      padding-bottom: 20px
+
+    #search
+
+      .form-control
+        width: 100%
+
+  footer
+
+    #back-top
+      display: block
+      position: fixed
+      top: 0
+      left: 0
+      height: 100%
+      width: 45px
+      background: rgba(129, 129, 129, 0.2)
+      cursor: pointer
+      padding-top: 70px
+
+      .icon
+        display: block
+        width: 100%
+        text-align: center
+
+      .rotate
+        font-size: 10px
+        width: 100%
+        text-align: center
+
+    .hidden
+      display: none
+
+
+
+// ≤1200px
++media-breakpoint-up(xl)
